@@ -1,0 +1,183 @@
+
+:root {
+    --color1: #FF2E63;
+    --color2: #08D9D6;
+    --color3: hsl(0, 0%, 92%);
+    --color4: #000000;
+    --color5: #c4ecc4;
+    --color6: #2eeb2e;
+    --bg-color: #d2d3d8;
+}
+
+.custom-bg {
+    background-color: #fad7d700; /* Color de fondo personalizado */
+}
+
+html {
+    height:  100vh;
+}
+
+html, body {
+    background-color: #1d6ca1;
+    background-image: linear-gradient(135deg, #2885c4 0%, #4a4b5c 100%);
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type='submit'] {
+    background-color: var(--bg-color);
+    color: var(--color4);
+    font-weight: bold;
+    border: solid 2px;
+    margin-top: 3vh;
+    transition:0.5s background-color ;
+} 
+
+ input[type='submit']:hover {
+    background-color: var(--color1);
+    cursor: pointer;
+}
+
+/* Estilos del contenedor genereal body */
+.cont-player,
+.for-play {
+    width: 100%;
+    margin: 20px;
+    border: 1px solid  var(--color4);
+    border-radius: 15px;
+}
+
+/* Estilos de la seccion de juegadores elegidos form */
+.log-player-x,
+.log-player-o {
+    margin-bottom: 20px;
+}
+
+.cont-form-option {
+    display: flex;
+    align-items: center;
+}
+
+.cont-option-gender {
+    display: flex;
+}
+
+.cont-option-gender input[type="radio"]{
+    margin: 0 10px;
+    height: 20px;
+    width: 20px;
+}
+.cont-radio-male,
+.cont-radio-female {
+    margin: 25px;
+    font-size: large;
+}
+
+
+
+/* Estilos del contenedor de jugadores */
+.sub-cont-player-scroll-x,
+.sub-cont-player-scroll-o{
+    max-height: 400px; /* Ejemplo de altura máxima */
+    overflow-y: auto; /* Habilita el scroll vertical cuando el contenido excede la altura */
+    border: 1px solid #ccc; /* Opcional: añade un borde para claridad visual */
+    padding: 10px; /* Opcional: añade un poco de espacio interior */
+  }
+
+.selected {
+    border: 2px solid green;
+    background-color: var(--color6);
+}
+
+.card:hover {
+    background-color: var(--color5);
+}
+.cont-player {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: 100px;
+}
+
+.cont-player-sub-player {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.player_x,
+.player_o {
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid var(--color4);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.cont-date-player-x,
+.cont-date-player-o {
+    height: 10px;
+    width: 70%;
+    margin: 2px;
+    padding: 10px;
+    border: 1px solid var(--color4);
+}
+
+.playerX,
+.playerO {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Estilo para la barra de mensajes de jugadores seleccinados */
+.for-play {
+    height: 10%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.player-for-play {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+} 
+
+
+/* Estilos del boton de juegar */
+.btn-play {
+    width: 100%;
+}
+
+@keyframes neon {
+    25% {text-shadow: 0 0 4vh;}
+    50% {text-shadow: 0 0 10vh;}
+    75% {text-shadow: 0 0 8vh;}
+}
+
+@keyframes color_change {
+    35% {color: #3dd908}
+    75% {color: #c2d919}
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+.modo-claro {
+    background-color: aliceblue;
+    margin-bottom: 0;
+}

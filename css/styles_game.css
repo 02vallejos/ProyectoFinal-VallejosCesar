@@ -1,0 +1,149 @@
+:root {
+    --color1: #FF2E63;
+    --color2: #08D9D6;
+    --color3: hsl(0, 0%, 92%);
+    --color4: #000000;
+    --color5: #43c743;
+    --bg-color: #d2d3d8;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    
+}
+
+/* Estilos del contenedor general */
+.cont-play {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.playerX, .playerO, .play {
+    border: 2px solid #333;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.playerX , 
+.playerO {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerX h1,
+.playerX p, 
+.playerO h1,
+.playerO p {
+   margin-left: 20px;
+}
+
+.play {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+.cont-mjs-show,
+.cont-btn-restar-show {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.show {
+    display: flex;
+}
+
+.cont-mjs,
+.message {
+    height: 80px;
+}
+/*  
+.message {
+     display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+/* #btnRestart.show {
+    display: flex;
+} */
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Estilo de boton volver */
+.btn-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+input {
+    padding: 2%;
+}
+
+input[type='submit'] {
+    background-color: var(--bg-color);
+    color: var(--color4);
+    font-weight: bold;
+    border: solid var(--color1) 2px;
+    margin-top: 3vh;
+    transition:0.5s background-color ;
+}
+
+input[type='submit']:hover {
+    background-color: var(--color1);
+    cursor: pointer;
+}
+
+form {
+    margin-left: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: var(--color4);
+}
